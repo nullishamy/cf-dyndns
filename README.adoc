@@ -120,6 +120,10 @@ spec:
 
 These environment variables can be defined directory or in a `.env` file in the same directory as the daemon itself.
 
+> [!IMPORTANT]  
+> Environment variables musn't be quoted once they reach the application, it will not unquote them itself.
+> This can cause the API requests to fail without a good explanation as to why.
+
 [#cron-schedule]
 ==== `CRON_SCHEDULE`
 
